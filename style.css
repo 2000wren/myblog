@@ -1,0 +1,31 @@
+@font-face {
+font-family: "cella";
+src: url("fonts/cella/Cella.tff");
+src: url("fonts/cella/Cella.otf") format("otf");
+}
+
+@font-face {
+font-family: "underwood-champion";
+src: url("fonts/underwood-champion/uwch.tff");
+}
+
+@font-face {
+font-family: "brock-script";
+src: url("fonts/brock-script/BrockScript.tff");
+}
+
+@font-face {
+font-family: "brownbaglunch";
+src: url("fonts/BrownBagLunch/BrownBagLunch.tff");
+}
+
+@font-face {
+font-family: "engineeringhand";
+src: url("fonts/EngineerHand.ttf");
+}
+
+p {
+	font-family: 'engineeringhand', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
