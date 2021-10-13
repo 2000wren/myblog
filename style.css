@@ -1,22 +1,26 @@
+html {
+	background-color: #BEB4A3;
+	color: #2B190C;
+}
+
 @font-face {
 font-family: "cella";
-src: url("fonts/cella/Cella.tff");
-src: url("fonts/cella/Cella.otf") format("otf");
+src: url("fonts/cella/Cella.ttf");
 }
 
 @font-face {
 font-family: "underwood-champion";
-src: url("fonts/underwood-champion/uwch.tff");
+src: url("fonts/underwood-champion/uwch.ttf");
 }
 
 @font-face {
 font-family: "brock-script";
-src: url("fonts/brock-script/BrockScript.tff");
+src: url("fonts/brock-script/BrockScript.ttf");
 }
 
 @font-face {
-font-family: "brownbaglunch";
-src: url("fonts/BrownBagLunch/BrownBagLunch.tff");
+font-family: "BrownBagLunch";
+src: url("fonts/BrownBagLunch/BrownBagLunch.ttf");
 }
 
 @font-face {
@@ -25,7 +29,38 @@ src: url("fonts/EngineerHand.ttf");
 }
 
 p {
-	font-family: 'engineeringhand', Arial, sans-serif;
+	font-family: 'cella', Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	font-size: 25px;
+}
+
+h1 {
+	font-family: 'cella', Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 50px;
+}
+
+.lined-background {
+	/*width: 80vh;*/
+	/*height: 100vh;*/
+
+	background: repeating-linear-gradient(
+		#F8E8C1, #F8E8C1 30px,
+  		#C0B5A2 31px, #F3E2B8 32px
+	);
+}
+
+.lined-background-header {
+	background: #F8E8C1;
+	height: 70px;
+}
+
+.card-text {
+ position: relative;
+ top: 30px;
+ font-size: 18px;
+ margin: 0 20px;
+ line-height: 27px;
 }
