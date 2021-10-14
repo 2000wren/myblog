@@ -78,9 +78,13 @@ h2 {
 	);
 }
 .lined-body {
- position: relative;
- margin: -2px 10px;
- line-height: 33px;
+	position: relative;
+	margin: -2px 10px;
+	line-height: 33px;
+	padding-bottom: 10px;
+}
+.lined-body h1{
+	line-height: 66px;
 }
 .lined-background-header {
 	background: var(--paper-color);
@@ -88,7 +92,8 @@ h2 {
 	font-family: 'underwood-champion', Arial, sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 50px;
+	font-size: 57px;
 	position: relative;
 	margin: 5px 10px;
+
 }
