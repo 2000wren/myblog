@@ -1,6 +1,17 @@
+/*learn how to set themes here: https://webdesign.tutsplus.com/tutorials/color-schemes-with-css-variables-and-javascript--cms-36989*/
+:root,
+:root.coffee {
+	--coffee-bg-color: #BEB4A3;
+	--coffee-text-color: #2B190C;
+}
+ 
+:root.toffee {
+	--coffee-bg-color: white;
+	--coffee-text-color: white;
+}
 html {
-	background-color: #BEB4A3;
-	color: #2B190C;
+	background-color: var(--coffee-bg-color);
+	color: var(--coffee-text-color);
 }
 
 @font-face {
@@ -28,39 +39,50 @@ font-family: "engineeringhand";
 src: url("fonts/EngineerHand.ttf");
 }
 
+hr {
+	border-top: 5px dashed #A0693F;
+}
 p {
-	font-family: 'cella', Arial, sans-serif;
+	font-family: 'underwood-champion', Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 25px;
 }
-
 h1 {
-	font-family: 'cella', Arial, sans-serif;
+	font-family: 'underwood-champion', Arial, sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 50px;
 }
+h2 {
+	font-family: 'underwood-champion', Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 40px;
+}
 
+/*learn to make lined paper here: https://codepen.io/ceg9498/post/creating-lined-paper*/
 .lined-background {
 	/*width: 80vh;*/
 	/*height: 100vh;*/
-
 	background: repeating-linear-gradient(
-		#F8E8C1, #F8E8C1 30px,
-  		#C0B5A2 31px, #F3E2B8 32px
+		#F8E8C1, #F8E8C1 35px,
+  		#E2D5B6 36px, 
+  		#E2D5B6 37px
 	);
 }
-
+.lined-body {
+ position: relative;
+ margin: -2px 10px;
+ line-height: 33px;
+}
 .lined-background-header {
 	background: #F8E8C1;
 	height: 70px;
-}
-
-.card-text {
- position: relative;
- top: 30px;
- font-size: 18px;
- margin: 0 20px;
- line-height: 27px;
+	font-family: 'underwood-champion', Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 50px;
+	position: relative;
+	margin: 5px 10px;
 }
