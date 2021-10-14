@@ -88,11 +88,11 @@ h2 {
 }
 .lined-background-header {
 	background: var(--paper-color);
-	height: 70px;
+	/*height: 70px;*/
 	font-family: 'underwood-champion', Arial, sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 50px;
+	font-size: 60px;
 	text-align: center;
 	position: relative;
 
