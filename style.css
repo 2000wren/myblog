@@ -1,17 +1,23 @@
 /*learn how to set themes here: https://webdesign.tutsplus.com/tutorials/color-schemes-with-css-variables-and-javascript--cms-36989*/
 :root,
 :root.coffee {
-	--coffee-bg-color: #BEB4A3;
-	--coffee-text-color: #2B190C;
+	--bg-color: #BEB4A3;
+	--text-color: #2B190C;
+	--outline-color: #A87C58;
+	--paper-color: #F8E8C1;
+	--paper-line-color: #E2D5B6;
 }
  
 :root.toffee {
-	--coffee-bg-color: white;
-	--coffee-text-color: white;
+	--bg-color: white;
+	--text-color: white;
+	--outline-color: white;
+	--paper-color: black;
+	--paper-line-color: white;
 }
 html {
-	background-color: var(--coffee-bg-color);
-	color: var(--coffee-text-color);
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
 @font-face {
@@ -40,7 +46,7 @@ src: url("fonts/EngineerHand.ttf");
 }
 
 hr {
-	border-top: 5px dashed #A0693F;
+	border-top: 5px dashed var(--outline-color);
 }
 p {
 	font-family: 'underwood-champion', Arial, sans-serif;
@@ -66,9 +72,9 @@ h2 {
 	/*width: 80vh;*/
 	/*height: 100vh;*/
 	background: repeating-linear-gradient(
-		#F8E8C1, #F8E8C1 35px,
-  		#E2D5B6 36px, 
-  		#E2D5B6 37px
+		var(--paper-color), var(--paper-color) 35px,
+  		var(--paper-line-color) 36px, 
+  		var(--paper-line-color) 37px
 	);
 }
 .lined-body {
@@ -77,7 +83,7 @@ h2 {
  line-height: 33px;
 }
 .lined-background-header {
-	background: #F8E8C1;
+	background: var(--paper-color);
 	height: 70px;
 	font-family: 'underwood-champion', Arial, sans-serif;
 	font-weight: bold;
